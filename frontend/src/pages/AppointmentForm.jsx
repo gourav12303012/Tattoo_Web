@@ -15,6 +15,7 @@ const AppointmentForm =() => {
     console.log(data)
     try {
 const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/addAppt`, data);
+console.log(import.meta.env.VITE_BACKEND_URL)
       console.log("Appointment submitted:", res.data);
       alert("Appointment submitted successfully!");
       reset();

@@ -138,7 +138,7 @@ const Navigation = () => {
               <span className="absolute left-0 -bottom-1 w-0 group-hover:w-full h-[2px] bg-indigo-500 transition-all"></span>
             </Link>
             <Link
-              to="/Login"
+              to="/AuthForm"
               onClick={() => setMenuOpen(false)}
               className="text-sm text-white/90 cursor-pointer hover:text-white transition font-semibold px-3 py-1 rounded-md border border-transparent hover:border-indigo-500 select-none"
             >
