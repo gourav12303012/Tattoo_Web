@@ -1,13 +1,15 @@
 import express from 'express'
 import cors from 'cors'
+import dotenv from 'dotenv'
 
 import connectDb from './utils/connectDb.js'
 import tattooRoute from "./router/tatto.route.js"
 const app = express()
 
+dotenv.config()
 app.use(express.json())
 const corsOption = {
-    origin:["http://localhost:5173"]
+    origin:[process.env.frontend_Url]
     ,credentials : true
 }
 

@@ -23,7 +23,7 @@ const AuthForm = () => {
   const onSubmit =async(data)=>{
     console.log(data)
     try {
-      const res  = await axios.post("http://localhost:5000/tattoo/allData",data,{
+      const res  = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/allData`,data,{
         headers:{
           "Content-Type":"application/json"
         }

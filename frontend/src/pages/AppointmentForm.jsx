@@ -14,7 +14,7 @@ const AppointmentForm =() => {
   const onSubmit = async (data) => {
     console.log(data)
     try {
-      const res = await axios.post("http://localhost:5000/tattoo/addAppt", data);
+const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/addAppt`, data);
       console.log("Appointment submitted:", res.data);
       alert("Appointment submitted successfully!");
       reset();

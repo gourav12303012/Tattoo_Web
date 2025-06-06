@@ -9,5 +9,8 @@
   "author": "",
   "license": "ISC",
   "type": "module",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
 }
