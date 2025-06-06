@@ -13,6 +13,9 @@ const corsOption = {
     ,credentials : true
 }
 
+app.get("/",(req,res)=>{
+    res.send({name:"amit"})
+})
 app.use(cors(corsOption))
 app.use("/tattoo",tattooRoute)
 
