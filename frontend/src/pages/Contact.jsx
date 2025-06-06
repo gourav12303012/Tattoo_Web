@@ -53,12 +53,12 @@ const Contact = () => {
           </p>
 
           <form className="bg-black/70 p-6 rounded-xl grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            <Input type="text" placeholder="Your Name" className="text-black" required />
-            <Input type="email" placeholder="Email Address" className="text-black" required />
-            <Input type="tel" placeholder="Phone Number" className="text-black" />
+            <Input type="text" placeholder="Your Name" className="text-white" required />
+            <Input type="email" placeholder="Email Address" className="text-white" required />
+            <Input type="tel" placeholder="Phone Number" className="text-white" />
             <Textarea
               placeholder="Your Message / Tattoo Idea"
-              className="md:col-span-2 text-black h-32"
+              className="md:col-span-2 text-white h-32"
               required
             />
             <Button className="w-full md:col-span-2 bg-purple-600 hover:bg-purple-700 transition">

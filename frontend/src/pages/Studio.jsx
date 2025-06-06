@@ -61,7 +61,7 @@ const Studio = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Book Your Appointment
+         <Link to="/"> Book Your Appointment</Link>
         </motion.button>
       </div>
     </motion.div>

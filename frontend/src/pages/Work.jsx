@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaPenNib, FaComments, FaPaintBrush, FaHeart } from "react-icons/fa";
 import Navigation from "./Navigation";
 import Footer from "./Footer"; // Add if you use it on the homepage
+import { Link } from "react-router-dom";
 
 const works = [
   {
@@ -83,10 +84,10 @@ const Work = () => {
               Ready to get your next piece of art?
             </p>
             <a
-              href="/booking"
+              href="/"
               className="inline-block bg-indigo-500 hover:bg-indigo-400 text-white font-medium text-sm sm:text-base px-6 py-3 rounded-xl tracking-wide shadow-md transition duration-300"
             >
-              Book a Session
+              <Link to="/"> Book a Session</Link>
             </a>
           </div>
         </div>

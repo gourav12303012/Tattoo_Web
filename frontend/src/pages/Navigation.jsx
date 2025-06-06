@@ -70,7 +70,7 @@ const Navigation = () => {
         </nav>
 
         <Link
-          to="/Login"
+          to="/AuthForm"
           className="text-sm text-white/90 cursor-pointer hover:text-white transition font-semibold px-3 py-1 rounded-md border border-transparent hover:border-indigo-500 select-none"
         >
           Login

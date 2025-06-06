@@ -24,7 +24,7 @@ const Homepage = () => {
       {
         id: 4,
         title: "About Jenny",
-        subtitle: "Passion Meets Precision",
+        subtitle: "Crafting Stories in Every Stroke",
         bg: "/about.jpg",
       },
     ],

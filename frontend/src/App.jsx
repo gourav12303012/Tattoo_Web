@@ -10,6 +10,7 @@ import DashboardPage from './pages/DashboardPage';
 import Contact from './pages/Contact';
 import Work from './pages/Work';
 import Testimonial from './pages/Testimonial';
+import AuthForm from './pages/AuthForm';
 
 const App = () => {
   const appRoute = createBrowserRouter([
@@ -21,6 +22,7 @@ const App = () => {
     {path:"/Contact",element:<Contact/>},
     {path:"/Work",element:<Work/>},
     {path:"/Testimonial",element:<Testimonial/>},
+    {path:"/AuthForm",element:<AuthForm/>},
   ])
   return (
    <RouterProvider router={appRoute}>

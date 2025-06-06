@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import Navigation from "./Navigation";
 
 const About = () => {
+  // useCallback for navigation
+  const handleBackToHome = useCallback(() => {
+    // Any logic before navigating can be added here
+  }, []);
+
   return (
     <motion.div
       className="relative w-full min-h-screen overflow-hidden text-white bg-black"
@@ -14,7 +19,7 @@ const About = () => {
     >
       {/* Background Image */}
       <img
-        src="/Studio.png" // Ensure this image exists in your public/ folder
+        src="/Studio.png"
         alt="About Jenny"
         className="absolute inset-0 w-full h-full object-cover object-center z-0 p-1150px"
       />
@@ -22,17 +27,20 @@ const About = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/70 z-10" />
 
-      {/* Back to Home */}
-      {/* <div className="absolute top-6 left-6 z-30">
+      {/* Back to Home (Uncomment if needed) */}
+      {/* 
+      <div className="absolute top-6 left-6 z-30">
         <Link
           to="/"
+          onClick={handleBackToHome}
           className="inline-flex items-center space-x-2 text-sm font-semibold uppercase tracking-wider text-white hover:text-indigo-400 transition border border-indigo-500 px-4 py-2 rounded-md"
         >
           <FaArrowLeft /> <span>Back to Home</span>
         </Link>
-      </div> */}
+      </div> 
+      */}
 
-      <Navigation/>
+      <Navigation />
 
       {/* Content */}
       <div className="relative z-20 flex flex-col justify-center items-start min-h-screen px-6 sm:px-12 max-w-4xl">
